@@ -6,6 +6,8 @@
 * Mohit Kumar (mohit_kumar@csu.fullerton.edu) | Role: Dev
 *  (@csu.fullerton.edu) | Role: SDET
 
+Installations:pip3 install flask, sudo apt install --yes gunicorn3
+
 
 #### ---------------------------------- Dev Ops-------------------------------------------
 1) Use this code for generating 3 instance of foreman in a terminal
