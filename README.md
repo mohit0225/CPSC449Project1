@@ -90,9 +90,9 @@ Example request:
 curl -i -X POST -H "Content-Type: application/json" -d '{"post_ids":["1","3"]}' 'http://127.0.0.1:5000/getList'
 ```
 
-## ###################################  TESTING ####################################################
+#### ---------------------------------- TESTING -------------------------------------------
 
-## ######################### Unit Testing ###########################
+#### ---------------------------------- UNIT TESTING --------------------------------------
 We use Tavern to test each service. Test files are located under 'tests'
 
 1) How to install Tavern
@@ -107,7 +107,7 @@ py.test test_posting.tavern.yaml
 py.test test_voting.tavern.yaml
 ```
  
-# ########################## Load Testing #############################
+#### ---------------------------------- Load Testing -------------------------------------------
 
 We use a framework called Locust to perform load test.
 We also use faker package to generate fake data for random testing.
@@ -123,7 +123,7 @@ pip3 install locustio
 ```
 
 3) How to run test
-## POST API
+#  --- POST API ---
 ```
 locust -f tests/postLocustFile.py --host=http://localhost:2015/posts --no-web -c 100 -r 10
 
@@ -131,7 +131,7 @@ locust -f tests/postLocustFile.py --host=http://localhost:2015/posts --no-web -c
 # -r 50: the rate of # users being spawned per second, here it's 50
 ```
 
-# VOTE API
+# --- VOTE API ---
 
 ```
 locust -f tests/voteLocustFile.py --host=http://localhost:2015/votes --no-web -c 100 -r 10
