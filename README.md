@@ -123,7 +123,7 @@ pip3 install locustio
 ```
 
 3) How to run test
-#  --- POST API ---
+#  ----- Post API -----
 ```
 locust -f tests/postLocustFile.py --host=http://localhost:2015/posts --no-web -c 100 -r 10
 
@@ -131,7 +131,7 @@ locust -f tests/postLocustFile.py --host=http://localhost:2015/posts --no-web -c
 # -r 50: the rate of # users being spawned per second, here it's 50
 ```
 
-# --- VOTE API ---
+# ----- Vote API -----
 
 ```
 locust -f tests/voteLocustFile.py --host=http://localhost:2015/votes --no-web -c 100 -r 10
