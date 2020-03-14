@@ -97,6 +97,7 @@ We use Tavern to test each service. Test files are located under 'tests'
 
 1) How to install Tavern
 ```
+pip3 install tavern
 pip3 install tavern[pytest]
 ```
 
