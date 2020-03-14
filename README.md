@@ -127,8 +127,8 @@ pip3 install locustio
 ```
 locust -f tests/postLocustFile.py --host=http://localhost:2015/posts --no-web -c 100 -r 10
 
-# -c 100: simulate 100 users
-# -r 50: the rate of # users being spawned per second, here it's 50
+# -c 100: # of users to be simulated. Here, it's 100 users
+# -r 50: the rate of # users spawned per second. Here, it's 50 users per second.
 ```
 
 #### ----- Vote API -----
