@@ -63,13 +63,13 @@ curl -i http://localhost:2015/posts/filter?n=2;
 1) Upvote a post:
 ```
 Example request:
-curl -i -X POST -H "Content-Type: application/json" -d '{"vote_id":"2"}' 'http://127.0.0.1:5000/upvotes'
+curl -i -X POST -H "Content-Type: application/json" -d '{"vote_id":"2"}' 'http://localhost:2015/votes/upvotes'
 ```
 
 2) Downvote a post:
 ```
 Example request:
-curl -i -X POST -H "Content-Type: application/json" -d '{"vote_id":"2"}' 'http://127.0.0.1:5000/downvotes'
+curl -i -X POST -H "Content-Type: application/json" -d '{"vote_id":"2"}' 'http://localhost:2015/votes/downvotes'
 ```
 
 3) Report the number of upvotes and downvotes for a post:
